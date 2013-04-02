@@ -50,7 +50,7 @@ recipes.push_back( new recipe(id, result, category, skill1, skill2, difficulty,\
        itm_knife_combat, -1, itm_machete, -1, itm_toolset, -1, NULL);
   COMP(itm_stick, 1, itm_broom, 1, itm_mop, 1, itm_2x4, 1, itm_bee_sting, 1,
        NULL);
-                                 
+
  RECIPE(itm_nailboard, CC_WEAPON, sk_null, sk_null, 0, 1000);
   TOOL(itm_hatchet, -1, itm_hammer, -1, itm_rock, -1, itm_toolset, -1, NULL);
   COMP(itm_2x4, 1, itm_bat, 1, NULL);
@@ -192,7 +192,7 @@ RECIPE(itm_c4, CC_WEAPON, sk_mechanics, sk_electronics, 4, 8000);
 
  RECIPE(itm_meat_cooked, CC_FOOD, sk_cooking, sk_null, 0, 5000);
   TOOL(itm_hotplate, 7, itm_toolset, 4, itm_fire, -1, NULL);
-  TOOL(itm_pan, -1, itm_pot, -1, NULL);
+  TOOL(itm_pan, -1, itm_pot, -1, itm_spear_wood, -1, NULL);
   COMP(itm_meat, 1, NULL);
 
  RECIPE(itm_dogfood, CC_FOOD, sk_cooking, sk_null, 4, 10000);
@@ -204,7 +204,7 @@ RECIPE(itm_c4, CC_WEAPON, sk_mechanics, sk_electronics, 4, 8000);
 
  RECIPE(itm_veggy_cooked, CC_FOOD, sk_cooking, sk_null, 0, 4000);
   TOOL(itm_hotplate, 5, itm_toolset, 3, itm_fire, -1, NULL);
-  TOOL(itm_pan, -1, itm_pot, -1, NULL);
+  TOOL(itm_pan, -1, itm_pot, -1, itm_spear_wood, -1, NULL);
   COMP(itm_veggy, 1, NULL);
 
  RECIPE(itm_spaghetti_cooked, CC_FOOD, sk_cooking, sk_null, 0, 10000);
@@ -248,8 +248,8 @@ RECIPE(itm_c4, CC_WEAPON, sk_mechanics, sk_electronics, 4, 8000);
  RECIPE(itm_apple_cider, CC_FOOD, sk_cooking, sk_null, 2, 7000);
   TOOL(itm_rock, -1, itm_toolset, -1, NULL);
   COMP(itm_apple, 3, NULL);
- 
- RECIPE(itm_jerky, CC_FOOD, sk_cooking, sk_null, 3, 30000);
+
+ RECIPE(itm_jerky, CC_FOOD, sk_cooking, sk_null, 2, 30000);
   TOOL(itm_hotplate, 10, itm_toolset, 5, itm_fire, -1, NULL);
   COMP(itm_salt_water, 1, itm_salt, 4, NULL);
   COMP(itm_meat, 1, NULL);
@@ -265,20 +265,20 @@ RECIPE(itm_c4, CC_WEAPON, sk_mechanics, sk_electronics, 4, 8000);
   COMP(itm_water, 1, NULL);
   COMP(itm_broccoli, 1, itm_zucchini, 1, itm_veggy, 1, NULL);
 
- RECIPE(itm_soup, CC_FOOD, sk_cooking, sk_null, 2, 10000);
+ RECIPE(itm_soup, CC_FOOD, sk_cooking, sk_null, 3, 10000);
   TOOL(itm_hotplate, 5, itm_toolset, 3, itm_fire, -1, NULL);
   TOOL(itm_pot, -1, NULL);
   COMP(itm_broth, 2, NULL);
-  COMP(itm_macaroni_raw, 1, itm_potato_raw, 1, NULL);
+  COMP(itm_macaroni_raw, 1, itm_potato_raw, 1, itm_veggy, 1, NULL);
   COMP(itm_tomato, 2, itm_broccoli, 2, itm_zucchini, 2, itm_veggy, 2, NULL);
 
- RECIPE(itm_bread, CC_FOOD, sk_cooking, sk_null, 4, 20000);
+ RECIPE(itm_bread, CC_FOOD, sk_cooking, sk_null, 3, 20000);
   TOOL(itm_hotplate, 8, itm_toolset, 4, itm_fire, -1, NULL);
   TOOL(itm_pot, -1, NULL);
   COMP(itm_flour, 3, NULL);
   COMP(itm_water, 2, NULL);
 
- RECIPE(itm_pie, CC_FOOD, sk_cooking, sk_null, 3, 25000);
+ RECIPE(itm_pie, CC_FOOD, sk_cooking, sk_null, 4, 25000);
   TOOL(itm_hotplate, 6, itm_toolset, 3, itm_fire, -1, NULL);
   TOOL(itm_pan, -1, NULL);
   COMP(itm_flour, 2, NULL);
@@ -286,7 +286,7 @@ RECIPE(itm_c4, CC_WEAPON, sk_mechanics, sk_electronics, 4, 8000);
   COMP(itm_sugar, 2, NULL);
   COMP(itm_water, 1, NULL);
 
- RECIPE(itm_pizza, CC_FOOD, sk_cooking, sk_null, 3, 20000);
+ RECIPE(itm_pizza, CC_FOOD, sk_cooking, sk_null, 4, 20000);
   TOOL(itm_hotplate, 8, itm_toolset, 4, itm_fire, -1, NULL);
   TOOL(itm_pan, -1, NULL);
   COMP(itm_flour, 2, NULL);
@@ -294,7 +294,7 @@ RECIPE(itm_c4, CC_WEAPON, sk_mechanics, sk_electronics, 4, 8000);
   COMP(itm_sauce_pesto, 1, itm_sauce_red, 1, NULL);
   COMP(itm_water, 1, NULL);
 
- RECIPE(itm_meth, CC_FOOD, sk_cooking, sk_null, 5, 20000);
+ RECIPE(itm_meth, CC_FOOD, sk_cooking, sk_null, 4, 20000);
   TOOL(itm_hotplate, 15, itm_toolset, 8, itm_fire, -1, NULL);
   TOOL(itm_bottle_glass, -1, itm_hose, -1, NULL);
   COMP(itm_dayquil, 2, itm_royal_jelly, 1, NULL);
@@ -313,7 +313,7 @@ RECIPE(itm_c4, CC_WEAPON, sk_mechanics, sk_electronics, 4, 8000);
 
  RECIPE(itm_mutagen, CC_FOOD, sk_cooking, sk_firstaid, 8, 10000);
   TOOL(itm_hotplate, 25, itm_toolset, 12, itm_fire, -1, NULL);
-  COMP(itm_meat_tainted, 3, itm_veggy_tainted, 5, itm_fetus, 1, itm_arm, 2,
+  COMP(itm_meat_tainted, 3, itm_veggy_tainted, 5, itm_arm, 2,
        itm_leg, 2, NULL);
   COMP(itm_bleach, 2, NULL);
   COMP(itm_ammonia, 1, NULL);

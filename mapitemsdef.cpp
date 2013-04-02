@@ -26,8 +26,8 @@ void game::init_mapitems()
 
  setvector(
    mapitems[mi_road],
-	itm_muffler, itm_pipe, itm_motor, itm_wheel, itm_big_wheel, itm_seat, 
-    itm_combustion_small, itm_combustion, NULL);
+	itm_muffler, itm_pipe, itm_motor, itm_wheel, itm_big_wheel, itm_seat,
+    itm_combustion_small, itm_combustion, itm_vehicle_controls, itm_storage_battery, NULL);
 
  setvector(
    mapitems[mi_livingroom],
@@ -38,7 +38,7 @@ void game::init_mapitems()
 	itm_gloves_wool, itm_gloves_winter, itm_gloves_leather,
 	itm_gloves_fingerless, itm_bandana, itm_scarf, itm_hat_cotton,
 	itm_hat_knit, itm_hat_fur, itm_helmet_bike, itm_helmet_motor,
-	itm_mag_tv, itm_mag_news, itm_lighter, itm_extinguisher, itm_mp3, 
+	itm_mag_tv, itm_mag_news, itm_lighter, itm_extinguisher, itm_mp3,
 	itm_usb_drive, NULL);
 
  setvector(
@@ -52,7 +52,7 @@ void game::init_mapitems()
  setvector(
    mapitems[mi_fridge],
 	itm_water, itm_oj, itm_cola, itm_rootbeer, itm_milk, itm_V8, itm_apple,
-	itm_sandwich_t, itm_mushroom, itm_blueberries, itm_strawberries, 
+	itm_sandwich_t, itm_mushroom, itm_blueberries, itm_strawberries,
 	itm_tomato, itm_broccoli, itm_zucchini, itm_frozen_dinner, itm_vodka,
 	itm_apple_cider, NULL);
 
@@ -158,7 +158,7 @@ void game::init_mapitems()
  setvector(
    mapitems[mi_hardware],
 	itm_superglue, itm_chain, itm_rope_6, itm_rope_30, itm_glass_sheet,
-	itm_pipe, itm_nail, itm_hose, itm_string_36, itm_frame, itm_metal_tank, NULL);
+	itm_pipe, itm_nail, itm_hose, itm_string_36, itm_frame, itm_metal_tank, itm_vehicle_controls, NULL);
 
  setvector(
    mapitems[mi_tools],
@@ -183,7 +183,7 @@ void game::init_mapitems()
         itm_amplifier, itm_antenna, itm_battery, itm_soldering_iron,
         itm_screwdriver, itm_processor, itm_RAM, itm_mp3, itm_flashlight,
         itm_radio, itm_hotplate, itm_receiver, itm_transponder, itm_tazer,
-	itm_two_way_radio, itm_usb_drive, itm_manual_electronics, NULL);
+	itm_two_way_radio, itm_usb_drive, itm_manual_electronics, itm_storage_battery, itm_solar_panel, itm_motor, NULL);
 
  setvector(
    mapitems[mi_sports],
@@ -289,7 +289,7 @@ void game::init_mapitems()
 
  setvector(
    mapitems[mi_shoes],
-	itm_sneakers, itm_boots, itm_flip_flops, itm_dress_shoes, itm_heels, 
+	itm_sneakers, itm_boots, itm_flip_flops, itm_dress_shoes, itm_heels,
 	NULL);
 
  setvector(
@@ -385,7 +385,7 @@ void game::init_mapitems()
    mapitems[mi_vault],
 	itm_purifier, itm_plut_cell, itm_ftk93, itm_nx17, itm_canister_goo,
 	itm_UPS_off, itm_gold, itm_bionics_super, itm_plasma_engine,
-	itm_minireactor, itm_alloy_plate, NULL);
+	itm_minireactor, itm_alloy_plate, itm_motor_large, NULL);
 
  setvector(
    mapitems[mi_art],
@@ -452,7 +452,7 @@ void game::init_mapitems()
 
  setvector(
    mapitems[mi_cloning_vat],
-	itm_fetus, itm_arm, itm_leg, NULL);
+	itm_arm, itm_leg, NULL);
 
  setvector(
    mapitems[mi_dissection],
@@ -607,7 +607,7 @@ void game::init_mapitems()
 
  setvector(
    mapitems[mi_sewer],
-	itm_mutagen, itm_fetus, itm_weed, itm_mag_porn, itm_rag, NULL);
+	itm_mutagen, itm_weed, itm_mag_porn, itm_rag, NULL);
 
  setvector(
    mapitems[mi_cavern],
@@ -651,7 +651,7 @@ void game::init_mapitems()
  setvector(
    mapitems[mi_bees],
 	itm_bee_sting, itm_chitin_piece, NULL);
- 
+
  setvector(
    mapitems[mi_wasps],
 	itm_wasp_sting, itm_chitin_piece, NULL);
@@ -704,8 +704,8 @@ void game::init_mapitems()
 
  setvector(
    mapitems[mi_rare],
-	itm_mutagen, itm_purifier, itm_royal_jelly, itm_fetus, itm_id_science,
-	itm_id_military, itm_electrohack, itm_processor, itm_armor_chitin,
+	itm_mutagen, itm_purifier, itm_royal_jelly, tm_id_science,
+    tm_id_military, itm_electrohack, itm_processor, itm_armor_chitin,
 	itm_plut_cell, itm_laser_pack, itm_m249, itm_v29, itm_ftk93, itm_nx17,
 	itm_conversion_battle, itm_conversion_sniper, itm_canister_goo,
 	itm_mininuke, itm_portal, itm_c4, itm_12mm, itm_hk_g80,
@@ -759,7 +759,7 @@ void game::init_mapitems()
 	itm_null, itm_corpse, itm_fire, itm_toolset, itm_meat, itm_veggy,
 	itm_meat_tainted, itm_veggy_tainted, itm_meat_cooked, itm_veggy_cooked,
 	itm_mushroom_poison, itm_spaghetti_cooked, itm_macaroni_cooked,
-	itm_fetus, itm_arm, itm_leg, itm_wrapper, itm_manhole_cover, itm_rock,
+	itm_arm, itm_leg, itm_wrapper, itm_manhole_cover, itm_rock,
 	itm_stick, itm_bag_plastic, itm_flashlight_on, itm_radio_on,
 	itm_chainsaw_on, itm_pipebomb_act, itm_grenade_act, itm_flashbang_act,
 	itm_EMPbomb_act, itm_gasbomb_act, itm_smokebomb_act, itm_molotov_lit,
