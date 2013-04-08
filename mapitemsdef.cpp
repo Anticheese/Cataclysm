@@ -704,8 +704,8 @@ void game::init_mapitems()
 
  setvector(
    mapitems[mi_rare],
-	itm_mutagen, itm_purifier, itm_royal_jelly, tm_id_science,
-    tm_id_military, itm_electrohack, itm_processor, itm_armor_chitin,
+	itm_mutagen, itm_purifier, itm_royal_jelly, itm_id_science,
+    itm_id_military, itm_electrohack, itm_processor, itm_armor_chitin,
 	itm_plut_cell, itm_laser_pack, itm_m249, itm_v29, itm_ftk93, itm_nx17,
 	itm_conversion_battle, itm_conversion_sniper, itm_canister_goo,
 	itm_mininuke, itm_portal, itm_c4, itm_12mm, itm_hk_g80,
